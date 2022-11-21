@@ -348,7 +348,7 @@ footer .footer-logo img {
   align-self: baseline;
 }
 
-/*INDIVIDUAL PRODUCT VIEW*/
+/*----------INDIVIDUAL PRODUCT VIEW----------*/
 
 .product-single {
   display: grid;
@@ -376,7 +376,46 @@ footer .footer-logo img {
   padding: 0.5rem 0;
 }
 
-/*--------------------------Monika PRODUCT CARD EDITS-------------------------------*/
+/*SINGLE PRODUCT VIEW*/
+
+.price-single {
+  padding: 0.5rem 0;
+}
+
+.price-single span {
+  padding-left: 0.5rem;
+}
+
+.colour-single {
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.colour-single li {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: 0.1px solid transparent;
+}
+
+.inStock-single {
+  padding: 0.5rem 0;
+}
+
+.inStock-single span {
+  padding-left: 0.5rem;
+}
+
+/*----Single Card - styling and @media*/
+
+/*-------frontpage PRODUCT CARD ------------------------*/
 
 /* monika: PRICE */
 

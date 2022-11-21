@@ -18,11 +18,20 @@ function showProduct(product) {
   //Selecting template and cloning
   const template = document.querySelector("template").content;
   const clone = template.cloneNode(true);
+  const colors = product._embedded["wp:term"][0];
   // Change stuff
   clone.querySelector("h2").textContent = product.title.rendered;
-  clone.querySelector("p.price").textContent = product.price;
-  clone.querySelector("p.colors").textContent = product.colours;
-  clone.querySelector("p.stock").textContent = product.stock;
+  clone.querySelector(".price-single span").textContent = product.price;
+  // color
+  colors.forEach((color) => {
+    const liEl = document.createElement("li");
+    liEl.style.backgroundColor = color.slug;
+    console.log("testing", liEl);
+    clone.querySelector(".colour-single ul").appendChild(liEl);
+  });
+  //stock
+  clone.querySelector(".inStock-single span").textContent = product.stock;
+
   clone.querySelector("p.details").textContent = product.details;
   clone.querySelector("img").src =
     product._embedded[

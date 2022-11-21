@@ -26,7 +26,6 @@ function showProduct(product) {
   //
   // display price
   clone.querySelector(".price span").textContent = product.price;
-  // clone.querySelector("p.price").textContent = product.price;
   //
   // display colors
 
@@ -36,8 +35,6 @@ function showProduct(product) {
     console.log("testing", liEl);
     clone.querySelector(".colour ul").appendChild(liEl);
   });
-
-  // clone.querySelector("p.colors").textContent = product.colours;
   //
   // display stock
   clone.querySelector(".inStock span").textContent = product.stock;
