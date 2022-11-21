@@ -348,6 +348,8 @@ footer .footer-logo img {
   align-self: baseline;
 }
 
+/*INDIVIDUAL PRODUCT VIEW*/
+
 .product-single {
   display: grid;
   justify-content: center;
@@ -367,6 +369,11 @@ footer .footer-logo img {
 
 .product-single .details {
   max-width: 55%;
+}
+
+.product-details h3 {
+  font-weight: 800;
+  padding: 0.5rem 0;
 }
 
 /*--------------------------Monika PRODUCT CARD EDITS-------------------------------*/
