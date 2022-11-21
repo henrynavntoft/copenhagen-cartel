@@ -349,6 +349,14 @@ footer .footer-logo img {
 }
 
 /*----------INDIVIDUAL PRODUCT VIEW----------*/
+.product-feed-single {
+  background-color: #fbfafc;
+  display: grid;
+  justify-content: center;
+  grid-gap: 2rem;
+  padding: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+}
 
 .product-single {
   display: grid;
@@ -413,11 +421,39 @@ ul {
   padding-left: 0.5rem;
 }
 
+.shopbtn {
+  padding-top: 1rem;
+}
+
 /*----Single Card - styling and @media*/
+@media screen and (max-width: 800px) {
+  .product-feed-single {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    /* grid-template-columns: repeat(1, 1fr); */
+    padding: 3rem;
+    background-color: #eee4e1;
+    border-radius: 1rem;
+    color: #fc6d3a;
+  }
+  /*the item name*/
+
+  .product-single {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-single .details {
+    max-width: fit-content;
+  }
+}
 
 /*-------frontpage PRODUCT CARD ------------------------*/
-
-/* monika: PRICE */
 
 .price {
   padding: 0.5rem 0;
@@ -426,7 +462,6 @@ ul {
 .price span {
   padding-left: 0.5rem;
 }
-/* monika: STOCK */
 
 .inStock {
   padding: 0.5rem 0;
@@ -436,7 +471,6 @@ ul {
   padding-left: 0.5rem;
 }
 
-/* monika: COLORS */
 .colour {
   display: flex;
   padding: 0.5rem 0;
@@ -454,25 +488,6 @@ ul {
   height: 1.2rem;
   border-radius: 50%;
   border: 0.1px solid transparent;
-}
-
-@media screen and (max-width: 1200px) {
-  .product-single {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 2rem;
-    background-color: #eee4e1;
-    border-radius: 1rem;
-    color: #fc6d3a;
-  }
-  .product-single .details {
-    max-width: 100%;
-  }
 }
 
 .product img {
