@@ -1,5 +1,5 @@
 const url =
-  "https://henrymedia.dk/copenhagen-cartel-backend/wp-json/wp/v2/product?_embed&per_page=4";
+  "https://henrymedia.dk/copenhagen-cartel-backend/wp-json/wp/v2/product?_embed&per_page=3";
 
 fetch(url)
   .then((res) => res.json())
