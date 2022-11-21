@@ -330,7 +330,7 @@ footer .footer-logo img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #eee4e1;
   border-radius: 1rem;
   color: #fc6d3a;
@@ -338,7 +338,14 @@ footer .footer-logo img {
 
 .productname {
   font-family: "brice";
-  padding-bottom: 0.5rem;
+  padding: 1rem 0;
+  align-self: baseline;
+}
+
+.price,
+.colour,
+.inStock {
+  align-self: baseline;
 }
 
 .product-single {
@@ -362,6 +369,47 @@ footer .footer-logo img {
   max-width: 55%;
 }
 
+/*--------------------------Monika PRODUCT CARD EDITS-------------------------------*/
+
+/* monika: PRICE */
+
+.price {
+  padding: 0.5rem 0;
+}
+
+.price span {
+  padding-left: 0.5rem;
+}
+/* monika: STOCK */
+
+.inStock {
+  padding: 0.5rem 0;
+}
+
+.inStock span {
+  padding-left: 0.5rem;
+}
+
+/* monika: COLORS */
+.colour {
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.colour li {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: 0.1px solid transparent;
+}
+
 @media screen and (max-width: 1200px) {
   .product-single {
     display: grid;
@@ -382,8 +430,12 @@ footer .footer-logo img {
 }
 
 .product img {
-  border-radius: 0.5rem;
-  max-width: 15rem;
+  border-radius: 10%;
+  /* border-radius: 0.5rem; */
+  /* max-width: 15rem; */
+  max-width: -webkit-fill-available;
+  /* padding: 0.5rem; */
+  order: -1;
 }
 
 .goto:hover {
