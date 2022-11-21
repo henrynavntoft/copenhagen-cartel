@@ -120,7 +120,7 @@ footer {
   color: #fbfafc;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer-menu {
@@ -152,6 +152,7 @@ footer .footer-logo img {
 
 .first-footer {
   text-align: center;
+  align-self: center;
 }
 
 .footer-social-link {
