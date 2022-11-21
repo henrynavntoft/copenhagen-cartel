@@ -118,6 +118,21 @@ p {
   padding-top: 2rem;
 }
 
+.it-style {
+  width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+  /* .intro-text {
+    padding: 3rem;
+  } */
+  .it-style {
+    width: auto;
+  }
+}
+
+/*footer*/
+
 footer {
   padding: 5rem;
   background-color: #1f1f20;
