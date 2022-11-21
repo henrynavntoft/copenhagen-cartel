@@ -146,6 +146,11 @@ footer {
   }
 }
 
+.footer-menu h3 {
+  padding-bottom: 1rem;
+  font-weight: 800;
+}
+
 footer .footer-logo img {
   max-height: 100px;
 }
