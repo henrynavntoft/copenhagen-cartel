@@ -84,6 +84,10 @@ p {
   opacity: 0.9;
 }
 
+.content h1 {
+  padding-bottom: 1.1rem;
+}
+
 .btn {
   display: inline-block;
   padding: 10px 30px;
@@ -91,7 +95,7 @@ p {
   color: #ffffff;
   border-radius: 1rem;
   border: solid #fff 1px;
-  margin-top: 25px;
+  margin-top: 35px;
   opacity: 0.9;
 }
 
@@ -186,11 +190,39 @@ footer .footer-logo img {
   padding: 5rem;
 }
 
+/*allies of the sea*/
+
 .statement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: #fc6d3a;
   background-color: #eee4e1;
   padding: 5rem;
-  text-align: center;
+}
+
+.statement h2 {
+  font-size: 2.8rem;
+}
+
+.statement h2::after {
+  content: " 🐚";
+}
+
+.statement h3 {
+  width: 60%;
+  padding: 1.4rem 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .statement h2 {
+    font-size: 2rem;
+  }
+  .statement h3 {
+    width: auto;
+  }
 }
 
 .testimonies {
@@ -239,8 +271,8 @@ footer .footer-logo img {
 }
 
 .newsletter-signup p {
-  width: 50%;
-  padding: 1.4rem 0;
+  width: 60%;
+  padding: 1.4rem 0rem;
 }
 
 .newsletter-signup form input {
