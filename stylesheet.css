@@ -147,7 +147,7 @@ footer {
 }
 
 .footer-menu h3 {
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   font-weight: 800;
 }
 
@@ -251,6 +251,12 @@ footer .footer-logo img {
   margin: 0;
   font-size: 1.6rem;
   outline: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .newsletter-signup h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .product-feed {
