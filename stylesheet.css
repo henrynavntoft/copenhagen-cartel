@@ -404,6 +404,7 @@ button {
   text-decoration: none;
   border: none;
   border-radius: 1rem;
+  transition-duration: 0.5s;
 }
 
 input {
