@@ -336,6 +336,11 @@ footer .footer-logo img {
   color: #fc6d3a;
 }
 
+.productname {
+  font-family: "brice";
+  padding-bottom: 0.5rem;
+}
+
 .product-single {
   display: grid;
   justify-content: center;
