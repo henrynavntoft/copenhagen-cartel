@@ -84,6 +84,10 @@ p {
   opacity: 0.9;
 }
 
+.content h1 {
+  padding-bottom: 1.1rem;
+}
+
 .btn {
   display: inline-block;
   padding: 10px 30px;
@@ -91,7 +95,7 @@ p {
   color: #ffffff;
   border-radius: 1rem;
   border: solid #fff 1px;
-  margin-top: 25px;
+  margin-top: 35px;
   opacity: 0.9;
 }
 
@@ -114,13 +118,28 @@ p {
   padding-top: 2rem;
 }
 
+.it-style {
+  width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+  /* .intro-text {
+    padding: 3rem;
+  } */
+  .it-style {
+    width: auto;
+  }
+}
+
+/*footer*/
+
 footer {
   padding: 5rem;
   background-color: #1f1f20;
   color: #fbfafc;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer-menu {
@@ -146,12 +165,18 @@ footer {
   }
 }
 
+.footer-menu h3 {
+  padding: 1rem 0;
+  font-weight: 800;
+}
+
 footer .footer-logo img {
   max-height: 100px;
 }
 
 .first-footer {
   text-align: center;
+  align-self: center;
 }
 
 .footer-social-link {
@@ -180,11 +205,43 @@ footer .footer-logo img {
   padding: 5rem;
 }
 
+.ocean-weed h1 {
+  padding-bottom: 1.1rem;
+}
+
+/*allies of the sea*/
+
 .statement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: #fc6d3a;
   background-color: #eee4e1;
   padding: 5rem;
-  text-align: center;
+}
+
+.statement h2 {
+  font-size: 2.8rem;
+}
+
+.statement h2::after {
+  content: " 🐚";
+}
+
+.statement h3 {
+  width: 60%;
+  padding: 1.4rem 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .statement h2 {
+    font-size: 2rem;
+  }
+  .statement h3 {
+    width: auto;
+  }
 }
 
 .testimonies {
@@ -216,6 +273,7 @@ footer .footer-logo img {
   }
 }
 
+/*Join the alliance*/
 .newsletter-signup {
   display: flex;
   flex-direction: column;
@@ -225,6 +283,15 @@ footer .footer-logo img {
   background-color: #0b25b7;
   color: #ffffff;
   padding: 5rem;
+}
+
+.newsletter-signup h2 {
+  font-size: 1.8rem;
+}
+
+.newsletter-signup p {
+  width: 60%;
+  padding: 1.4rem 0rem;
 }
 
 .newsletter-signup form input {
@@ -237,6 +304,15 @@ footer .footer-logo img {
   margin: 0;
   font-size: 1.6rem;
   outline: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .newsletter-signup h2 {
+    font-size: 1.5rem;
+  }
+  .newsletter-signup p {
+    width: auto;
+  }
 }
 
 .product-feed {
@@ -254,10 +330,22 @@ footer .footer-logo img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #eee4e1;
   border-radius: 1rem;
   color: #fc6d3a;
+}
+
+.productname {
+  font-family: "brice";
+  padding: 1rem 0;
+  align-self: baseline;
+}
+
+.price,
+.colour,
+.inStock {
+  align-self: baseline;
 }
 
 .product-single {
@@ -281,6 +369,47 @@ footer .footer-logo img {
   max-width: 55%;
 }
 
+/*--------------------------Monika PRODUCT CARD EDITS-------------------------------*/
+
+/* monika: PRICE */
+
+.price {
+  padding: 0.5rem 0;
+}
+
+.price span {
+  padding-left: 0.5rem;
+}
+/* monika: STOCK */
+
+.inStock {
+  padding: 0.5rem 0;
+}
+
+.inStock span {
+  padding-left: 0.5rem;
+}
+
+/* monika: COLORS */
+.colour {
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.colour li {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: 0.1px solid transparent;
+}
+
 @media screen and (max-width: 1200px) {
   .product-single {
     display: grid;
@@ -301,8 +430,12 @@ footer .footer-logo img {
 }
 
 .product img {
-  border-radius: 0.5rem;
-  max-width: 15rem;
+  border-radius: 10%;
+  /* border-radius: 0.5rem; */
+  /* max-width: 15rem; */
+  max-width: -webkit-fill-available;
+  /* padding: 0.5rem; */
+  order: -1;
 }
 
 .goto:hover {
@@ -328,6 +461,7 @@ button {
   text-decoration: none;
   border: none;
   border-radius: 1rem;
+  transition-duration: 0.5s;
 }
 
 input {
