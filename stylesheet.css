@@ -1,3 +1,21 @@
+/* PRELOADER  */
+
+.preloader {
+  position: relative;
+  background: #fbfafc url(assets/preloader2.svg) no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.preloader-fade {
+  opacity: 0;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -439,7 +457,7 @@ ul {
 }
 
 .goto:hover {
-  opacity: 0.8;
+  opacity: 0.7;
   transition: 0.5s;
 }
 
@@ -516,7 +534,7 @@ button:hover {
   position: absolute;
   cursor: pointer;
   opacity: 0;
-  z-index: 100;
+  z-index: 80;
 }
 #menuToggle span {
   display: block;
@@ -526,7 +544,7 @@ button:hover {
   position: relative;
   background: black;
   border-radius: 3px;
-  z-index: 100;
+  z-index: 80;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }

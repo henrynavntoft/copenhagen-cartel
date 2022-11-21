@@ -54,3 +54,16 @@ function showProduct(product) {
   //Appending it
   parent.appendChild(clone);
 }
+
+//Preloader
+
+let loader = document.querySelector(".preloader");
+
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    loader.classList.add("preloader-fade");
+  }, 1000);
+  setTimeout(function () {
+    loader.style.display = "none";
+  }, 1200);
+});
