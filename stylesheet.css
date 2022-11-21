@@ -380,12 +380,17 @@ footer .footer-logo img {
 
 .product-single {
   max-width: fit-content;
-  align-items: flex-end;
+  /* align-items: flex-end; */
+}
+
+.imagebox {
+  border: 1px solid hotpink;
+  border-radius: 10%;
 }
 
 .product-single img {
-  border-radius: 0.5rem;
-  max-width: 30rem;
+  border-radius: 10%;
+  max-width: 100%;
   /*send it to the center*/
 }
 
@@ -398,10 +403,6 @@ footer .footer-logo img {
 .product-details h3 {
   font-weight: 800;
   padding: 0.5rem 0;
-}
-
-.imagebox {
-  border: 1px solid hotpink;
 }
 
 .price-single {
@@ -428,7 +429,6 @@ ul {
   width: 1.2rem;
   height: 1.2rem;
   border-radius: 50%;
-  border: 0.1px solid transparent;
 }
 
 .inStock-single {
