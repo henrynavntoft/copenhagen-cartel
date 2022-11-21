@@ -233,6 +233,14 @@ footer .footer-logo img {
   padding: 5rem;
 }
 
+.newsletter-signup h2 {
+  font-size: 1.8rem;
+}
+
+.newsletter-signup p {
+  padding: 1.4rem 0;
+}
+
 .newsletter-signup form input {
   justify-content: center;
   align-items: center;
