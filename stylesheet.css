@@ -16,10 +16,22 @@
   opacity: 0;
 }
 
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: local("assets/Satoshi-Regular"),
+    url("https://henrymedia.dk/Satoshi-Regular.otf");
+}
+
+@font-face {
+  font-family: "Brice-SemiBold";
+  src: local("assets/Brice-SemiBold"),
+    url("https://henrymedia.dk/Brice-SemiBold.otf");
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: "satoshi";
+  font-family: "Satoshi-Regular", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -36,22 +48,22 @@ body {
 }
 
 h1 {
-  font-family: "brice";
+  font-family: "Brice-SemiBold";
   font-size: 3rem;
 }
 
 h2 {
-  font-family: "brice";
+  font-family: "Brice-SemiBold";
   font-size: 1.5rem;
 }
 
 h3 {
-  font-family: "satoshi";
+  font-family: "Satoshi-Regular";
   font-size: 1.2rem;
 }
 
 p {
-  font-family: "satoshi";
+  font-family: "Satoshi-Regular";
   font-size: 1rem;
 }
 
@@ -414,7 +426,7 @@ footer .footer-logo img {
   padding: 0.5rem 0;
 }
 
-ul {
+.colour ul {
   list-style-type: none;
   display: flex;
   gap: 0.5rem;
