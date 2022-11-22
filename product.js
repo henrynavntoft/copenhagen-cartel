@@ -29,7 +29,7 @@ function showProduct(product) {
       "wp:featuredmedia"
     ][0].media_details.sizes.medium_large.source_url;
   //Selection where i want the clone
-  const parent = document.querySelector("main .product-feed");
+  const parent = document.querySelector("main .product-feed-single");
   //Appending it
   parent.appendChild(clone);
 }
